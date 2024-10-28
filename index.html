@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-white text-2xl font-bold">Tailwind Showcase</div>
+            <div>
+                <a href="#home" class="text-white px-4 hover:underline">Home</a>
+                <a href="#features" class="text-white px-4 hover:underline">Features</a>
+                <a href="#gallery" class="text-white px-4 hover:underline">Gallery</a>
+                <a href="#pricing" class="text-white px-4 hover:underline">Pricing</a>
+                <a href="#contact" class="text-white px-4 hover:underline">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1500x700');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <div class="text-center text-white">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">Welcome to Tailwind CSS Showcase</h1>
+                <p class="text-lg mb-8">A stunning showcase of the best Tailwind CSS features and components.</p>
+                <a href="#features" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Explore Features</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Our Features</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-blue-100 p-6 rounded-lg shadow-lg">
+                        <div class="text-blue-600 text-3xl mb-4">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">Responsive Design</h5>
+                        <p>Our layouts are designed to be responsive, ensuring a seamless experience on any device.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-green-100 p-6 rounded-lg shadow-lg">
+                        <div class="text-green-600 text-3xl mb-4">
+                            <i class="fas fa-speedometer-alt"></i>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">High Performance</h5>
+                        <p>Optimized for speed and performance for an exceptional browsing experience.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-yellow-100 p-6 rounded-lg shadow-lg">
+                        <div class="text-yellow-600 text-3xl mb-4">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h5 class="text-xl font-semibold mb-2">Secure</h5>
+                        <p>Our site uses advanced security protocols to ensure data privacy and integrity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Pricing Plans</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-blue-200 p-6 rounded-lg shadow-lg">
+                        <h5 class="text-xl font-bold mb-4">Basic</h5>
+                        <p class="text-3xl font-semibold">$10 <span class="text-gray-500 text-base">/ month</span></p>
+                        <ul class="list-disc list-inside my-4">
+                            <li>Basic features</li>
+                            <li>Email support</li>
+                            <li>Access to all updates</li>
+                        </ul>
+                        <a href="#" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Get Started</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-green-200 p-6 rounded-lg shadow-lg">
+                        <h5 class="text-xl font-bold mb-4">Standard</h5>
+                        <p class="text-3xl font-semibold">$25 <span class="text-gray-500 text-base">/ month</span></p>
+                        <ul class="list-disc list-inside my-4">
+                            <li>Standard features</li>
+                            <li>Priority support</li>
+                            <li>Access to all updates</li>
+                        </ul>
+                        <a href="#" class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">Get Started</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-yellow-200 p-6 rounded-lg shadow-lg">
+                        <h5 class="text-xl font-bold mb-4">Premium</h5>
+                        <p class="text-3xl font-semibold">$50 <span class="text-gray-500 text-base">/ month</span></p>
+                        <ul class="list-disc list-inside my-4">
+                            <li>All features</li>
+                            <li>Dedicated support</li>
+                            <li>Access to all updates</li>
+                        </ul>
+                        <a href="#" class="bg-yellow-600 text-white py-2 px-4 rounded hover:bg-yellow-700">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+            <form action="#" method="POST" class="w-full md:w-2/3 lg:w-1/2 mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded" placeholder="Your Name" required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" class="w-full p-3 border border-gray-300 rounded" placeholder="Your Email" required>
+                </div>
+                <div class="mb-4">
+                    <textarea class="w-full p-3 border border-gray-300 rounded" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4">
+        <div class="container mx-auto">
+            <p>&copy; 2023 Tailwind CSS Showcase. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
